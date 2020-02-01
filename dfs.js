@@ -35,6 +35,7 @@ function DFS(graph,u){
     time = time+1;
     u.color = 1;
     u.d = time;
+    
     for(let v of graph.adjList.get(u)){
         if(v.color == 0){
             v.pred = u;
